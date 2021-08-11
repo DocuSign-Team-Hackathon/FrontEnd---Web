@@ -28,7 +28,7 @@ const Footer = () =>{
           <Container d="flex" flexDirection="column">
           <Heading margin="10px" as="h4" size="lg">Find Us</Heading>
             <Text margin="10px" >1101 29th Avenue, Oakland, CA 94601</Text>
-            <Image src="src/assets/map.png" alt="location of the oakland animal services" />
+            <Image src="./assets/map.png" alt="location of the oakland animal services" />
           </Container>
         </Box>
       </Box>
