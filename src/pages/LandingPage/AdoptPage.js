@@ -6,17 +6,18 @@ const AdoptPage = () =>{
     return(
     <Flex flexDirection="column">
     <Header />
-       <Box paddingLeft="20px">
-           <Heading color="#C2392E" >Pets available for Adoption</Heading>
+       <Box paddingLeft="100px" paddingTop="50px">
+           <Heading color="black">Pets available for <Text as="span" color="#C2392E">Adoption</Text> </Heading>
        </Box>
-       <Grid paddingTop="100px" templateColumns="repeat(3, 1fr)" templateRows="repeat(2, 450px)" textAlign="center">
+       <Grid paddingTop="50px" templateColumns="repeat(3, 1fr)" templateRows="repeat(2, 450px)" textAlign="center">
       {Dogs.map((dog) => {
         return (
-          <Box margin="30px" padding="20px" border="1px" borderRadius="5px" key={dog.id}>
-            {/* <Image margin="auto" src={dog.picture} /> */}
-            <Heading color="#C2392E" fontSize="2xl">{dog.name}</Heading>
-            <Text>{dog.age}, {dog.size}, {dog.gender}, {dog.type}</Text>
-            {/* <Image src={dog.picture} alt={`An adorable ${dog.type}`}/> */}
+          <Box margin="30px" padding="20px"  borderRadius="5px" dropShadow="8px 10px 8px black" key={dog.id}>
+            <Image margin="auto" src={dog.picture} width="70%" />
+            <Box padding="10px" margin="auto" >
+              <Heading color="#C2392E" fontSize="2xl">{dog.name}</Heading>
+              <Text padding="10px"color="black">{dog.age}, {dog.size}, {dog.gender}, {dog.type}</Text>
+            </Box>
           </Box>
         )
       })}

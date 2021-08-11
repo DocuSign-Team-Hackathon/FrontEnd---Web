@@ -5,7 +5,7 @@ const Dogs = [
       type: 'Husky',
       size: 'Large',
       gender: 'Female',
-      picture: 'https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/04/Bulldog_02.jpg',
+      picture: './assets/coco.png',
     },
     { id:2,
       name: 'Yoshi',
@@ -13,7 +13,7 @@ const Dogs = [
       gender:'Female',
       type: 'Terrier',
       size: 'Medium',
-      picture: 'https://cdn.mos.cms.futurecdn.net/RY2EpSo74hvYXyAVpTN2Gg.jpg'
+      picture: './assets/yoshi.png'
     },
     { id:3,
       name: 'Max',
@@ -21,7 +21,7 @@ const Dogs = [
       gender:'Male',
       type: 'German Shepherd',
       size: 'Large',
-      picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BostonTerrier001.JPG/220px-BostonTerrier001.JPG'
+      picture: './assets/max.png'
     },
     {  id:4,
         name: 'Oreo',
@@ -29,7 +29,7 @@ const Dogs = [
         gender:'Female',
         type: 'Pit Bull Terrier',
         size: 'Large',
-        picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BostonTerrier001.JPG/220px-BostonTerrier001.JPG'
+        picture: './assets/oreo.png'
     },
     {   id:5,
         name: 'Bella',
@@ -37,7 +37,7 @@ const Dogs = [
         gender:'Female',
         type: 'Pit Bull Terrier',
         size: 'Large',
-        picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BostonTerrier001.JPG/220px-BostonTerrier001.JPG'
+        picture: './assets/bella.png'
     },
     {   id:6,
         name: 'Ross',
@@ -45,7 +45,7 @@ const Dogs = [
         gender:'Male',
         type: 'German Shepherd',
         size: 'Large',
-        picture: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/BostonTerrier001.JPG/220px-BostonTerrier001.JPG'
+        picture: './assets/ross.png'
     }
   ];
   
