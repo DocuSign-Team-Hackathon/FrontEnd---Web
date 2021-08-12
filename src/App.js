@@ -12,12 +12,31 @@ const breakpoints = createBreakpoints({
 });
 
 const theme = extendTheme({ breakpoints });
+import { ChakraProvider } from "@chakra-ui/react";
+import HomePage from "./pages/LandingPage/HomePage.js";
+import { BrowserRouter as Route, Switch } from "react-router-dom";
+// import Header from './pages/Header.js'
+
+import DogPage from "./pages/LandingPage/DogPage.js";
+import AdoptPage from "./pages/LandingPage/AdoptPage.js";
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      {/* <LandingPage /> */}
-      <PetAdoptionForm />
+      <Switch>
+        <Route exact path="/petadoptionform">
+          <PetAdoptionForm />
+        </Route>
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route exact path="/adopt">
+          <AdoptPage />
+        </Route>
+        <Route exact path="/dog">
+          <DogPage />
+        </Route>
+      </Switch>
     </ChakraProvider>
   );
 }
