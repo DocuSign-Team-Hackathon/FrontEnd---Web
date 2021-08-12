@@ -6,6 +6,10 @@ const Dogs = [
       size: 'Large',
       gender: 'Female',
       picture: './assets/coco.png',
+      color:'white',
+      kids: 'Ok w/ Kids over age 16',
+      cats: 'No cats',
+      dog:'OK w/ introduction'
     },
     { id:2,
       name: 'Yoshi',
@@ -13,7 +17,11 @@ const Dogs = [
       gender:'Female',
       type: 'Terrier',
       size: 'Medium',
-      picture: './assets/yoshi.png'
+      picture: './assets/yoshi.png',
+      color: null,
+      kids: null,
+      cats: null,
+      dog: null
     },
     { id:3,
       name: 'Max',
@@ -21,7 +29,11 @@ const Dogs = [
       gender:'Male',
       type: 'German Shepherd',
       size: 'Large',
-      picture: './assets/max.png'
+      picture: './assets/max.png',
+      color: null,
+      kids: null,
+      cats: null,
+      dog: null
     },
     {  id:4,
         name: 'Oreo',
@@ -29,7 +41,12 @@ const Dogs = [
         gender:'Female',
         type: 'Pit Bull Terrier',
         size: 'Large',
-        picture: './assets/oreo.png'
+        picture: './assets/oreo.png',
+        color: null,
+        kids: null,
+        cats: null,
+        dog: null
+
     },
     {   id:5,
         name: 'Bella',
@@ -37,7 +54,11 @@ const Dogs = [
         gender:'Female',
         type: 'Pit Bull Terrier',
         size: 'Large',
-        picture: './assets/bella.png'
+        picture: './assets/bella.png',
+        color: null,
+        kids: null,
+        cats: null,
+        dog: null
     },
     {   id:6,
         name: 'Ross',
@@ -45,7 +66,12 @@ const Dogs = [
         gender:'Male',
         type: 'German Shepherd',
         size: 'Large',
-        picture: './assets/ross.png'
+        picture: './assets/ross.png',
+        color: null,
+      kids: null,
+      cats: null,
+      dog: null
+      
     }
   ];
   

@@ -26,9 +26,11 @@ const Footer = () =>{
                   510-777-3211 (cell phone).</Text>
           </Container>
           <Container d="flex" flexDirection="column">
-          <Heading margin="10px" as="h4" size="lg">Find Us</Heading>
-            <Text margin="10px" >1101 29th Avenue, Oakland, CA 94601</Text>
-            <Image src="./assets/map.png" alt="location of the oakland animal services" />
+            <Heading margin="10px" as="h4" size="lg">Find Us</Heading>
+              <Text margin="10px" >1101 29th Avenue, Oakland, CA 94601</Text>
+              <Container>
+              <Image src="./assets/map.png" alt="location of the oakland animal services" h="300px" />
+              </Container>
           </Container>
         </Box>
       </Box>
