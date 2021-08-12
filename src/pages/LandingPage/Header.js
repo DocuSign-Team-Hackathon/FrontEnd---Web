@@ -8,7 +8,6 @@ import { IconButton, Text, Flex, Box, Button, Input, ListItem, UnorderedList, He
 import AdoptPage from './AdoptPage';
 const Header = () =>{
     return(
-        <Router>
         <Box d="flex" justifyContent="space-between" marginRight="70px" marginTop="20px" marginLeft="70px">
           <Box d="flex" > 
             <Image src="/assets/logoNav.png" width="30%" />
@@ -16,7 +15,7 @@ const Header = () =>{
               <nav>
                 <UnorderedList textDecoration="none" fontWeight="semibold" styleType="none" d="flex" justifyContent="space-between" color="black" textTransform="uppercase">
                   <ListItem margin="10px">
-                    <Link to="/adopt">Adpot</Link>
+                    <a href="#">Adpot</a>
                   </ListItem>
                   <ListItem margin="10px">
                     <a href="https://www.oaklandanimalservices.org/services/">Services</a>
@@ -33,12 +32,11 @@ const Header = () =>{
           </Box> 
               <Box d="flex" justifyContent="space-between">   
                 <Input margin="10px" variant="outline" placeholder="Search" size="sm" />
-                <IconButton colorScheme="blue" aria-label="Search database"icon={<SearchIcon />} />
+                {/* <IconButton colorScheme="blue" aria-label="Search database"icon={<SearchIcon />} /> */}
                 <Button margin="10px"  bg="tomato" w="40%" p={4} color="white">Donate Now</Button>
               </Box>
         </Box>
-        <Route path="/adopt" component={AdoptPage} />
-        </Router>
+
     )
 }
 

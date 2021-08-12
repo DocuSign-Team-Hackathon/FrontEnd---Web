@@ -57,11 +57,11 @@ function DogPage(){
                         </Box>
                         <Box  margin="10px">
                         <Heading fontSize="1.5rem"  color="black">W/ Kids</Heading>
-                            <Text textAlign="center" padding="5px"color="black">{Dogs[currentDogId].kids}</Text>
+                            <Text  textAlign="center" padding="5px"color="black">{Dogs[currentDogId].kids}</Text>
                         </Box>
                         <Box margin="10px">
                         <Heading fontSize="1.5rem" color="black">W/ Cats</Heading>
-                            <Text textAlign="center" padding="5px"color="black">{Dogs[currentDogId].cats}</Text>
+                            <Text  textAlign="center" padding="5px"color="black">{Dogs[currentDogId].cats}</Text>
                         </Box>
                         <Box  margin="10px"x>
                         <Heading fontSize="1.5rem"  color="black">W/ Dogs</Heading>
@@ -76,9 +76,9 @@ function DogPage(){
                 </Box>
             </Box>
             </Box>
-            <Box bg="Blue" padding="50px" d="flex" justifyContent="space-between">
-                    <button color="black" onClick={prevDog}>Prev</button>
-                    <button color="black"onClick={nextDog}>Next</button>
+            <Box padding="50px" d="flex" justifyContent="space-between">
+                    <Button color="black" onClick={prevDog}>Prev</Button>
+                    <Button color="black"onClick={nextDog}>Next</Button>
             </Box>
         </Box>
     )
