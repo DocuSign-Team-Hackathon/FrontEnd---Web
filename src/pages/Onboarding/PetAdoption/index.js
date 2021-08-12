@@ -25,6 +25,7 @@ import { useState } from "react";
 import { getPowerFormUrl } from "../../../utils";
 
 import oaklandanimalservice from "../../../assets/oaklandanimalservice.png";
+import Header from "../../LandingPage/Header";
 
 // import PdfForm from "./petAdoption.pdf";
 
@@ -39,11 +40,8 @@ const PetAdoptionForm = () => {
     setLinkUrl(powerFormUrl);
   };
 
-  //   function onDocumentLoadSuccess({ numPages }) {
-  //     setNumPages(numPages);
-  //   }
   return (
-    <Box w="100%" bgColor="#c7c7c7">
+    <Box w="100%">
       <VStack
         align="start"
         maxW="1200px"
@@ -54,6 +52,7 @@ const PetAdoptionForm = () => {
         bgColor="white"
         borderRadius="10px"
       >
+        <Header />
         <HStack justify="space-between" w="100%">
           <Box w="400px">
             <Image src={oaklandanimalservice} alt="oakland animal services" />

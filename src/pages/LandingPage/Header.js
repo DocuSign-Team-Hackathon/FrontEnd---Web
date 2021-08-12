@@ -19,7 +19,12 @@ const Header = () => {
       marginLeft="70px"
     >
       <Box d="flex">
-        <Image src="/assets/logoNav.png" width="30%" />
+        <Box width="30%">
+          <a href="/">
+            <Image src="/assets/logoNav.png" />
+          </a>
+        </Box>
+
         <Box>
           <nav>
             <UnorderedList
@@ -32,7 +37,7 @@ const Header = () => {
               textTransform="uppercase"
             >
               <ListItem margin="10px">
-                <a href="/adopt">Adpot</a>
+                <a href="/adopt">Adopt</a>
               </ListItem>
               <ListItem margin="10px">
                 <a href="https://www.oaklandanimalservices.org/services/">

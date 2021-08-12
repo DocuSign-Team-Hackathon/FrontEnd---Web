@@ -32,7 +32,15 @@ const AdoptPage = () => {
                 dropShadow="8px 10px 8px black"
                 key={dog.id}
               >
-                <Image margin="auto" src={dog.picture} width="70%" />
+                <a href="/dog">
+                  {" "}
+                  <Image
+                    margin="auto"
+                    src={dog.picture}
+                    width="70%"
+                    cursor="pointer"
+                  />
+                </a>
                 <Box
                   boxShadow="lg"
                   p="6"
