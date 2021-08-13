@@ -49,10 +49,10 @@ const AdoptPage = () => {
                   width="280px"
                   margin="auto"
                 >
-                  <Heading color="#C2392E" fontSize="2xl">
+                  <Heading color="#C2392E" fontSize="2xl" textAlign="center">
                     {dog.name}
                   </Heading>
-                  <Text fontSize="0.9rem" padding="5px" color="black">
+                  <Text fontSize="0.9rem" padding="5px" color="black" textAlign="center">
                     {dog.age}, {dog.size}, {dog.gender}, {dog.type}
                   </Text>
                 </Box>

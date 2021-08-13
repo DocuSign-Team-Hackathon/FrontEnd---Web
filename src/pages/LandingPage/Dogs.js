@@ -16,7 +16,20 @@ const Dogs = [
       color:'white',
       kids: 'Ok w/ Kids over age 16',
       cats: 'No cats',
-      dog:'OK w/ introduction'
+      dog:'OK w/ introduction',
+      desc1:` Our boy Coco can't wait to meet you! He is a volunteer
+      favorite for his quirky and spunky personality. He is a
+      character with personality to spare. He has a bouncy hop to
+      his step and is playful with toys and people. Coco also likes
+      other dogs and has done well with them; it's a joy to watch
+      him blossom in play. A confident, respectful dog in the home
+      who can show him the ropes may be a good match for him.`,
+      desc2:`He has been working on gaining confidence to be the best boy
+      he can be. He can be nervous in some situations so he needs
+      adopters who understand his needs to help him thrive. Positive
+      reinforcement training will be a wonderful way to get to know
+      and bond with Coco. He is smart and will need dog savvy,
+      experienced adopters.`
     },
     { id:2,
       name: 'Yoshi',
@@ -29,6 +42,8 @@ const Dogs = [
       kids: null,
       cats: null,
       dog: null,
+      desc1: null,
+      desc2: null,
     },
     { id:3,
       name: 'Max',
@@ -40,7 +55,9 @@ const Dogs = [
       color: null,
       kids: null,
       cats: null,
-      dog: null
+      dog: null,
+      desc1: null,
+      desc2: null,
     },
     {  id:4,
         name: 'Oreo',
@@ -52,7 +69,9 @@ const Dogs = [
         color: null,
         kids: null,
         cats: null,
-        dog: null
+        dog: null,
+        desc1: null,
+        desc2: null,
 
     },
     {   id:5,
@@ -65,7 +84,9 @@ const Dogs = [
         color: null,
         kids: null,
         cats: null,
-        dog: null
+        dog: null,
+        desc1: null,
+        desc2: null,
     },
     {   id:6,
         name: 'Ross',
@@ -77,7 +98,9 @@ const Dogs = [
         color: null,
       kids: null,
       cats: null,
-      dog: null
+      dog: null,
+      desc1: null,
+      desc2: null,
       
     }
   ];

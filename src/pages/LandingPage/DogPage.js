@@ -160,21 +160,10 @@ function DogPage() {
                   About
                 </Heading>
                 <Text color="black" paddingBottom="10px" paddingTop="20px">
-                  Our boy Coco can't wait to meet you! He is a volunteer
-                  favorite for his quirky and spunky personality. He is a
-                  character with personality to spare. He has a bouncy hop to
-                  his step and is playful with toys and people. Coco also likes
-                  other dogs and has done well with them; it's a joy to watch
-                  him blossom in play. A confident, respectful dog in the home
-                  who can show him the ropes may be a good match for him.
+                {Dogs[currentDogId].desc1}
                 </Text>
                 <Text color="black">
-                  He has been working on gaining confidence to be the best boy
-                  he can be. He can be nervous in some situations so he needs
-                  adopters who understand his needs to help him thrive. Positive
-                  reinforcement training will be a wonderful way to get to know
-                  and bond with Coco. He is smart and will need dog savvy,
-                  experienced adopters.
+                {Dogs[currentDogId].desc2}
                 </Text>
               </Box>
             </Box>
