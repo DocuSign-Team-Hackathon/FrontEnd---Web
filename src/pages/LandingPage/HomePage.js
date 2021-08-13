@@ -9,6 +9,8 @@ import {
 } from "@chakra-ui/react";
 import Header from "./Header";
 import Footer from "./Footer";
+import AdoptPage from "./AdoptPage";
+import { Icon } from '@iconify/react';
 
 const HomePage = () => {
   return (
@@ -24,12 +26,12 @@ const HomePage = () => {
         <Box
           marginTop="150px"
           d="flex"
-          alignItems="end"
+          alignItems="flex-end"
           flexDirection="column"
-          color="black"
+          color="black" paddingRight="50px"
         >
           <Text margin="10px" fontSize="6xl">
-            Adpot a Companion
+            Adopt a Companion
           </Text>
           <Text margin="10px" frontSize="2x1">
             Your Support is so Important
@@ -63,27 +65,28 @@ const HomePage = () => {
         <Box padding="100px" d="flex" justifyContent="center" margin="20px">
           <Box>
             <Container>
-              <Text color="black">
-                Oakland Animal Servicesis Oakland’s only “open admissions”
-                shelter{" "}
+              <Text d="flex" flexDirection="column" alignItems="center" textAlign="center" color="black" >
+              <Icon icon="fa:paw"  color="#C2392E" fontSize="3.5rem" textAlign="center" />
+                <Text marginTop="20px">Oakland Animal Servicesis Oakland’s only “open admissions”shelter{" "}</Text>
               </Text>
             </Container>
           </Box>
           <Box>
             <Container>
-              <Text color="black">
-                We bring warmth and welcome homeall Oakland’s homeless,
+              <Text d="flex" flexDirection="column" alignItems="center" textAlign="center" color="black">
+              <Icon icon="fa:paw" color="#C2392E" fontSize="3.5rem" textAlign="center" />
+               <Text marginTop="20px">We bring warmth and welcome homeall Oakland’s homeless,
                 injured,orphaned, unwanted, lost,abandoned and mistreated
-                animals.{" "}
+                animals.{" "}</Text> 
               </Text>
             </Container>
           </Box>
           <Box>
             <Container>
-              <Text color="black">
-                {" "}
-                Every animal brought to our door is welcome, regardless of age,
-                breed, temperament or medical condition
+              <Text d="flex" flexDirection="column" alignItems="center" textAlign="center" color="black">
+              <Icon icon="fa:paw" color="#C2392E" fontSize="3.5rem" textAlign="center" margin="20px"/>
+                <Text marginTop="20px">Every animal brought to our door is welcome, regardless of age,
+                breed, temperament or medical condition                {" "}</Text>
               </Text>
             </Container>
           </Box>
@@ -101,7 +104,7 @@ const HomePage = () => {
           textAlign="right"
           d="flex"
           flexDirection="column"
-          alignItems="end"
+          alignItems="flex-end"
           justifyContent="space-between"
           marginTop="100px"
         >

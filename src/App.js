@@ -7,6 +7,7 @@ import HomePage from "./pages/LandingPage/HomePage.js";
 import { BrowserRouter as Route, Switch } from "react-router-dom";
 // import Header from './pages/Header.js'
 
+
 import DogPage from "./pages/LandingPage/DogPage.js";
 import AdoptPage from "./pages/LandingPage/AdoptPage.js";
 const breakpoints = createBreakpoints({
@@ -24,13 +25,13 @@ function App() {
         <Route path="/petadoptionform">
           <PetAdoptionForm />
         </Route>
-        <Route exact path="/">
+        <Route exact path="/" component={HomePage}>
           <HomePage />
         </Route>
-        <Route path="/adopt">
+        <Route exact path="/adopt" component={AdoptPage}>
           <AdoptPage />
         </Route>
-        <Route path="/dog">
+        <Route exact path="/dog" component={DogPage}>
           <DogPage />
         </Route>
       </Switch>

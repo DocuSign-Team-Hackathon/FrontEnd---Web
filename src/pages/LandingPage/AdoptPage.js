@@ -62,7 +62,6 @@ const AdoptPage = () => {
           })}
         </Grid>
       </Flex>
-      <Route path="/dogpage" component={DogPage} />
     </Router>
   );
 };

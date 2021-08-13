@@ -1,13 +1,18 @@
 import { React } from "react";
 import { Text, Box, Heading, Image, Container } from "@chakra-ui/react";
+import { Icon } from '@iconify/react';
+
 const Footer = () => {
   return (
     <Box backgroundColor="#222222" padding="100px">
       <Box d="flex">
         <Container d="flex" flexDirection="column">
-          <Heading margin="10px" as="h4" size="lg">
+        <Box margin="10px"d="flex">
+          <Icon icon="ant-design:clock-circle-outlined" fontSize="2.4rem" />
+          <Heading marginLeft="10px" as="h4" size="lg">
             OAS Hours
           </Heading>
+          </Box>
           <Text margin="10px">
             In response to the ongoing COVID-19 pandemic, OAS is open by
             appointment only.
@@ -22,9 +27,12 @@ const Footer = () => {
           </Text>
         </Container>
         <Container d="flex" flexDirection="column">
-          <Heading margin="10px" as="h4" size="lg">
-            Contact Us
-          </Heading>
+          <Box d="flex" margin="10px">
+            <Icon icon="bx:bxs-phone-call" fontSize="2.4rem" />
+            <Heading marginLeft="10px" as="h4" size="lg">
+              Contact Us
+            </Heading>
+          </Box>
           <Text margin="10px">
             Fax: 510.535.5601 Phone: 510.535.5602 Relay Service 711.
           </Text>
@@ -36,6 +44,23 @@ const Footer = () => {
             In cases of emergency, call 911 (land line) or 510-777-3211 (cell
             phone).
           </Text>
+          <Box paddingTop="50px" d="flex" justifyContent="flex-start">
+            <Box margin="10px">
+              <a href="https://www.facebook.com/OAKAnimalServices/">
+              <Icon margin="20px" icon="akar-icons:facebook-fill" fontSize="2.4rem" />
+              </a>
+            </Box>
+            <Box margin="10px">
+              <a href="https://twitter.com/oaklandsanimals">
+              <Icon icon="akar-icons:twitter-fill" fontSize="2.4rem"  />
+              </a>
+            </Box>
+            <Box margin="10px">
+              <a href="https://www.instagram.com/oaklandanimalservices/">
+              <Icon icon="akar-icons:instagram-fill" fontSize="2.4rem"  />
+              </a>
+            </Box>
+          </Box>
         </Container>
         <Container d="flex" flexDirection="column">
           <Heading margin="10px" as="h4" size="lg">

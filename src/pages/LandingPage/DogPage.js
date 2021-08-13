@@ -10,6 +10,7 @@ function DogPage() {
   const nextDog = () => {
     const nextId = currentDogId + 1;
     setDogId(nextId);
+    
   };
 
   const prevDog = () => {

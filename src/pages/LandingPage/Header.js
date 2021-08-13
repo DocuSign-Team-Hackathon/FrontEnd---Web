@@ -1,4 +1,5 @@
 import { React } from "react";
+import AdoptPage from "./AdoptPage";
 
 import {
   Box,
@@ -8,11 +9,12 @@ import {
   UnorderedList,
   Image,
 } from "@chakra-ui/react";
-import { BrowserRouter as Link, useHistory } from "react-router-dom";
+import { BrowserRouter as Link, Router, useHistory } from "react-router-dom";
 
 const Header = () => {
   let history = useHistory();
   return (
+    
     <Box
       d="flex"
       justifyContent="space-between"
@@ -41,9 +43,8 @@ const Header = () => {
               <ListItem
                 margin="10px"
                 cursor="pointer"
-                onClick={() => history.push("/adopt")}
               >
-                <Link to="/adopt">Adopt</Link>
+                <a href="/adopt">Adopt</a>
               </ListItem>
               <ListItem margin="10px">
                 <a href="https://www.oaklandanimalservices.org/services/">
@@ -66,7 +67,7 @@ const Header = () => {
         <Input margin="10px" variant="outline" placeholder="Search" size="sm" />
         {/* <IconButton colorScheme="blue" aria-label="Search database"icon={<SearchIcon />} /> */}
         <Button margin="10px" bg="tomato" w="40%" p={4} color="white">
-          Donate Now
+          <a href="https://www.oaklandanimalservices.org/how-to-help/donate/">Donate Now</a>
         </Button>
       </Box>
     </Box>
