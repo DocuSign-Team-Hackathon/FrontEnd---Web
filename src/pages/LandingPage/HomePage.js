@@ -11,12 +11,16 @@ import Header from "./Header";
 import Footer from "./Footer";
 import AdoptPage from "./AdoptPage";
 import { Icon } from '@iconify/react';
+import watchOakland from '../../assets/watchOakland.png'
+import blog1 from '../../assets/checkblog1.jpg';
+import blog2 from '../../assets/checkblog2.jpg';
+import blog3 from '../../assets/checkblog3.jpg';
 
 const HomePage = () => {
   return (
     <Flex direction="column" color="white">
       <Box
-        bgImage="url('./assets/headerImage.png')"
+        bgImage="url('../../assets/headerImage.png')"
         h="100vh"
         backgroundSize="1900px"
         backgroundPosition="center right top "
@@ -45,7 +49,7 @@ const HomePage = () => {
         <Box d="flex">
           <Box width="50%" margin="auto">
             <Image
-              src="/assets/watchOakland.png"
+              src={watchOakland}
               alt="people playing with their dog"
             />
           </Box>
@@ -93,7 +97,7 @@ const HomePage = () => {
         </Box>
       </Box>
       <Box
-        bgImage="url('./assets/206aa1150dd774a5f91e40279c1b37bf.jpg')"
+        bgImage="url('../../assets/206aa1150dd774a5f91e40279c1b37bf.jpg')"
         backgroundPosition="left bottom"
         h="60vh"
         backgroundRepeat="no-repeat"
@@ -135,7 +139,7 @@ const HomePage = () => {
             <Container position="relative">
               <a href="https://www.oaklandanimalservices.org/2021/06/foas-is-hiring-dog-foster-transfer-coordinator/">
                 <Image
-                  src="./assets/checkblog1.jpg"
+                  src={blog1}
                   h="350px"
                   borderRadius="20px"
                 />
@@ -155,7 +159,7 @@ const HomePage = () => {
             <Container position="relative">
               <a href="https://www.oaklandanimalservices.org/2021/07/bissell-empty-the-shelters-adoption-event-july-7-11/">
                 <Image
-                  src="./assets/checkblog2.jpg"
+                  src={blog2}
                   h="350px"
                   borderRadius="20px"
                 />
@@ -175,7 +179,7 @@ const HomePage = () => {
             <Container position="relative">
               <a href="https://www.oaklandanimalservices.org/2021/07/oas-is-now-open-on-thursdays-5-7pm-for-walk-in-adoptions/">
                 <Image
-                  src="./assets/checkblog3.jpg"
+                  src={blog3}
                   h="350px"
                   borderRadius="20px"
                 />

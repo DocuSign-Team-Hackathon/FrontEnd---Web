@@ -1,6 +1,7 @@
 import { React } from "react";
 import { Text, Box, Heading, Image, Container } from "@chakra-ui/react";
 import { Icon } from '@iconify/react';
+import mapImg from '../../assets/map.png';
 
 const Footer = () => {
   return (
@@ -69,7 +70,7 @@ const Footer = () => {
           <Text margin="10px">1101 29th Avenue, Oakland, CA 94601</Text>
           <Container>
             <Image
-              src="./assets/map.png"
+              src={mapImg}
               alt="location of the oakland animal services"
               h="300px"
             />

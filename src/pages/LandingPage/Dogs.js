@@ -1,3 +1,10 @@
+import cocoImg from '../../assets/coco.png';
+import oreaImg from '../../assets/oreo.png';
+import rossImg from '../../assets/ross.png';
+import maxImg from '../../assets/max.png';
+import yoshiImg from '../../assets/yoshi.png';
+import bellaImg from '../../assets/bella.png';
+
 const Dogs = [
     { id:1,
       name: 'Coco',
@@ -5,7 +12,7 @@ const Dogs = [
       type: 'Husky',
       size: 'Large',
       gender: 'Female',
-      picture: './assets/coco.png',
+      picture: {cocoImg},
       color:'white',
       kids: 'Ok w/ Kids over age 16',
       cats: 'No cats',
@@ -17,11 +24,11 @@ const Dogs = [
       gender:'Female',
       type: 'Terrier',
       size: 'Medium',
-      picture: './assets/yoshi.png',
+      picture: {yoshiImg},
       color: null,
       kids: null,
       cats: null,
-      dog: null
+      dog: null,
     },
     { id:3,
       name: 'Max',
@@ -29,7 +36,7 @@ const Dogs = [
       gender:'Male',
       type: 'German Shepherd',
       size: 'Large',
-      picture: './assets/max.png',
+      picture: {maxImg},
       color: null,
       kids: null,
       cats: null,
@@ -41,7 +48,7 @@ const Dogs = [
         gender:'Female',
         type: 'Pit Bull Terrier',
         size: 'Large',
-        picture: './assets/oreo.png',
+        picture: {oreaImg},
         color: null,
         kids: null,
         cats: null,
@@ -54,7 +61,7 @@ const Dogs = [
         gender:'Female',
         type: 'Pit Bull Terrier',
         size: 'Large',
-        picture: './assets/bella.png',
+        picture: {bellaImg},
         color: null,
         kids: null,
         cats: null,
@@ -66,7 +73,7 @@ const Dogs = [
         gender:'Male',
         type: 'German Shepherd',
         size: 'Large',
-        picture: './assets/ross.png',
+        picture: {rossImg},
         color: null,
       kids: null,
       cats: null,
