@@ -9,18 +9,19 @@ import {
 } from "@chakra-ui/react";
 import Header from "./Header";
 import Footer from "./Footer";
-import AdoptPage from "./AdoptPage";
-import { Icon } from '@iconify/react';
-import watchOakland from '../../assets/watchOakland.png'
-import blog1 from '../../assets/checkblog1.jpg';
-import blog2 from '../../assets/checkblog2.jpg';
-import blog3 from '../../assets/checkblog3.jpg';
+import { Icon } from "@iconify/react";
+import watchOakland from "../../assets/watchOakland.png";
+import blog1 from "../../assets/checkblog1.jpg";
+import blog2 from "../../assets/checkblog2.jpg";
+import blog3 from "../../assets/checkblog3.jpg";
+import headerImage from "../../assets/headerImage.png";
+import puppyImage from "../../assets/206aa1150dd774a5f91e40279c1b37bf.jpg";
 
 const HomePage = () => {
   return (
     <Flex direction="column" color="white">
       <Box
-        bgImage="url('../../assets/headerImage.png')"
+        bgImage={headerImage}
         h="100vh"
         backgroundSize="1900px"
         backgroundPosition="center right top "
@@ -32,7 +33,8 @@ const HomePage = () => {
           d="flex"
           alignItems="flex-end"
           flexDirection="column"
-          color="black" paddingRight="50px"
+          color="black"
+          paddingRight="50px"
         >
           <Text margin="10px" fontSize="6xl">
             Adopt a Companion
@@ -48,10 +50,7 @@ const HomePage = () => {
       <Box padding="100px" bg="white">
         <Box d="flex">
           <Box width="50%" margin="auto">
-            <Image
-              src={watchOakland}
-              alt="people playing with their dog"
-            />
+            <Image src={watchOakland} alt="people playing with their dog" />
           </Box>
           <Box width="40%">
             <Container>
@@ -69,35 +68,76 @@ const HomePage = () => {
         <Box padding="100px" d="flex" justifyContent="center" margin="20px">
           <Box>
             <Container>
-              <Text d="flex" flexDirection="column" alignItems="center" textAlign="center" color="black" >
-              <Icon icon="fa:paw"  color="#C2392E" fontSize="3.5rem" textAlign="center" />
-                <Text marginTop="20px">Oakland Animal Servicesis Oakland’s only “open admissions”shelter{" "}</Text>
+              <Text
+                d="flex"
+                flexDirection="column"
+                alignItems="center"
+                textAlign="center"
+                color="black"
+              >
+                <Icon
+                  icon="fa:paw"
+                  color="#C2392E"
+                  fontSize="3.5rem"
+                  textAlign="center"
+                />
+                <Text marginTop="20px">
+                  Oakland Animal Servicesis Oakland’s only “open
+                  admissions”shelter{" "}
+                </Text>
               </Text>
             </Container>
           </Box>
           <Box>
             <Container>
-              <Text d="flex" flexDirection="column" alignItems="center" textAlign="center" color="black">
-              <Icon icon="fa:paw" color="#C2392E" fontSize="3.5rem" textAlign="center" />
-               <Text marginTop="20px">We bring warmth and welcome homeall Oakland’s homeless,
-                injured,orphaned, unwanted, lost,abandoned and mistreated
-                animals.{" "}</Text> 
+              <Text
+                d="flex"
+                flexDirection="column"
+                alignItems="center"
+                textAlign="center"
+                color="black"
+              >
+                <Icon
+                  icon="fa:paw"
+                  color="#C2392E"
+                  fontSize="3.5rem"
+                  textAlign="center"
+                />
+                <Text marginTop="20px">
+                  We bring warmth and welcome homeall Oakland’s homeless,
+                  injured,orphaned, unwanted, lost,abandoned and mistreated
+                  animals.{" "}
+                </Text>
               </Text>
             </Container>
           </Box>
           <Box>
             <Container>
-              <Text d="flex" flexDirection="column" alignItems="center" textAlign="center" color="black">
-              <Icon icon="fa:paw" color="#C2392E" fontSize="3.5rem" textAlign="center" margin="20px"/>
-                <Text marginTop="20px">Every animal brought to our door is welcome, regardless of age,
-                breed, temperament or medical condition                {" "}</Text>
+              <Text
+                d="flex"
+                flexDirection="column"
+                alignItems="center"
+                textAlign="center"
+                color="black"
+              >
+                <Icon
+                  icon="fa:paw"
+                  color="#C2392E"
+                  fontSize="3.5rem"
+                  textAlign="center"
+                  margin="20px"
+                />
+                <Text marginTop="20px">
+                  Every animal brought to our door is welcome, regardless of
+                  age, breed, temperament or medical condition{" "}
+                </Text>
               </Text>
             </Container>
           </Box>
         </Box>
       </Box>
       <Box
-        bgImage="url('../../assets/206aa1150dd774a5f91e40279c1b37bf.jpg')"
+        bgImage={puppyImage}
         backgroundPosition="left bottom"
         h="60vh"
         backgroundRepeat="no-repeat"
@@ -138,11 +178,7 @@ const HomePage = () => {
           <Box>
             <Container position="relative">
               <a href="https://www.oaklandanimalservices.org/2021/06/foas-is-hiring-dog-foster-transfer-coordinator/">
-                <Image
-                  src={blog1}
-                  h="350px"
-                  borderRadius="20px"
-                />
+                <Image src={blog1} h="350px" borderRadius="20px" />
                 <Text
                   position="absolute"
                   bottom="10px"
@@ -158,11 +194,7 @@ const HomePage = () => {
           <Box>
             <Container position="relative">
               <a href="https://www.oaklandanimalservices.org/2021/07/bissell-empty-the-shelters-adoption-event-july-7-11/">
-                <Image
-                  src={blog2}
-                  h="350px"
-                  borderRadius="20px"
-                />
+                <Image src={blog2} h="350px" borderRadius="20px" />
                 <Text
                   position="absolute"
                   bottom="10px"
@@ -178,11 +210,7 @@ const HomePage = () => {
           <Box>
             <Container position="relative">
               <a href="https://www.oaklandanimalservices.org/2021/07/oas-is-now-open-on-thursdays-5-7pm-for-walk-in-adoptions/">
-                <Image
-                  src={blog3}
-                  h="350px"
-                  borderRadius="20px"
-                />
+                <Image src={blog3} h="350px" borderRadius="20px" />
                 <Text
                   position="absolute"
                   bottom="10px"
