@@ -8,8 +8,7 @@ import {
   UnorderedList,
   Image,
 } from "@chakra-ui/react";
-import { BrowserRouter as Link, Router, useHistory } from "react-router-dom";
-import logoNav from '../../assets/logoNav.png'
+import logoNav from "../../assets/logoNav.png";
 
 const Header = () => {
   return (
