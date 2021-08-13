@@ -1,5 +1,4 @@
 import { React } from "react";
-import AdoptPage from "./AdoptPage";
 
 import {
   Box,
@@ -9,13 +8,14 @@ import {
   UnorderedList,
   Image,
 } from "@chakra-ui/react";
+<<<<<<< HEAD
 import { BrowserRouter as Link, Router, useHistory } from "react-router-dom";
 import logoNav from '../../assets/logoNav.png'
+=======
+>>>>>>> d29f45e9018f9642b05447a46ae25f8d2fe8d40a
 
 const Header = () => {
-  let history = useHistory();
   return (
-    
     <Box
       d="flex"
       justifyContent="space-between"
@@ -41,10 +41,7 @@ const Header = () => {
               color="black"
               textTransform="uppercase"
             >
-              <ListItem
-                margin="10px"
-                cursor="pointer"
-              >
+              <ListItem margin="10px" cursor="pointer">
                 <a href="/adopt">Adopt</a>
               </ListItem>
               <ListItem margin="10px">
@@ -68,7 +65,9 @@ const Header = () => {
         <Input margin="10px" variant="outline" placeholder="Search" size="sm" />
         {/* <IconButton colorScheme="blue" aria-label="Search database"icon={<SearchIcon />} /> */}
         <Button margin="10px" bg="tomato" w="40%" p={4} color="white">
-          <a href="https://www.oaklandanimalservices.org/how-to-help/donate/">Donate Now</a>
+          <a href="https://www.oaklandanimalservices.org/how-to-help/donate/">
+            Donate Now
+          </a>
         </Button>
       </Box>
     </Box>

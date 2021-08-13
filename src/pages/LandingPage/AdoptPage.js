@@ -1,9 +1,9 @@
 import { React } from "react";
 import Header from "./Header";
 import Dogs from "./Dogs";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { Text, Flex, Box, Heading, Image, Grid } from "@chakra-ui/react";
-import DogPage from "./DogPage";
+
 const AdoptPage = () => {
   return (
     <Router>
@@ -21,7 +21,6 @@ const AdoptPage = () => {
           paddingTop="50px"
           templateColumns="repeat(3, 1fr)"
           templateRows="repeat(2, 450px)"
-          textAlign="center"
         >
           {Dogs.map((dog) => {
             return (
