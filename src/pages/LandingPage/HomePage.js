@@ -42,11 +42,10 @@ const HomePage = () => {
           <Text margin="10px" fontSize="2x1">
             Your Support is so Important
           </Text>
-          <a href="/adopt">
-            <Button margin="10px" bg="tomato" w="20%" p={4} color="white">
-              Adopt Today
-            </Button>
-          </a>
+
+          <Button margin="10px" bg="tomato" w="20%" p={4} color="white">
+            <a href="/adopt"> Adopt Today </a>
+          </Button>
         </Box>
       </Box>
       <Box padding="100px" bg="white">
