@@ -21,7 +21,6 @@ const AdoptPage = () => {
           paddingTop="50px"
           templateColumns="repeat(3, 1fr)"
           templateRows="repeat(2, 450px)"
-          textAlign="center"
         >
           {Dogs.map((dog) => {
             return (

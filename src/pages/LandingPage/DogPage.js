@@ -10,7 +10,6 @@ function DogPage() {
   const nextDog = () => {
     const nextId = currentDogId + 1;
     setDogId(nextId);
-    
   };
 
   const prevDog = () => {
@@ -42,10 +41,10 @@ function DogPage() {
               <Box>
                 <Text
                   paddingTop="10px"
-                  textAlign="center"
                   color="#C2392E"
                   fontWeight="semibold"
                   fontSize="2xl"
+                  align="center"
                 >
                   {Dogs[currentDogId].name} is Available
                 </Text>
@@ -84,7 +83,7 @@ function DogPage() {
                   Husky Mix
                 </Heading>
                 <Box d="flex" flexWrap="wrap">
-                  <Box margin="10px" textAlign="center">
+                  <Box margin="10px" align="center">
                     <Heading fontSize="1.5rem" color="black">
                       Age
                     </Heading>
@@ -92,7 +91,7 @@ function DogPage() {
                       {Dogs[currentDogId].age}
                     </Text>
                   </Box>
-                  <Box textAlign="center" margin="10px">
+                  <Box align="center" margin="10px">
                     <Heading fontSize="1.5rem" color="black">
                       Size
                     </Heading>
@@ -100,7 +99,7 @@ function DogPage() {
                       {Dogs[currentDogId].size}
                     </Text>
                   </Box>
-                  <Box textAlign="center" margin="10px">
+                  <Box align="center" margin="10px">
                     <Heading fontSize="1.5rem" color="black">
                       Color
                     </Heading>
@@ -108,7 +107,7 @@ function DogPage() {
                       {Dogs[currentDogId].color}
                     </Text>
                   </Box>
-                  <Box textAlign="center" margin="10px">
+                  <Box align="center" margin="10px">
                     <Heading fontSize="1.5rem" color="black">
                       Gender
                     </Heading>
@@ -116,7 +115,7 @@ function DogPage() {
                       {Dogs[currentDogId].gender}
                     </Text>
                   </Box>
-                  <Box textAlign="center" margin="10px">
+                  <Box align="center" margin="10px">
                     <Heading fontSize="1.5rem" color="black">
                       Type
                     </Heading>
@@ -128,7 +127,7 @@ function DogPage() {
                     <Heading fontSize="1.5rem" color="black">
                       W/ Kids
                     </Heading>
-                    <Text textAlign="center" padding="5px" color="black">
+                    <Text align="center" padding="5px" color="black">
                       {Dogs[currentDogId].kids}
                     </Text>
                   </Box>
@@ -136,7 +135,7 @@ function DogPage() {
                     <Heading fontSize="1.5rem" color="black">
                       W/ Cats
                     </Heading>
-                    <Text textAlign="center" padding="5px" color="black">
+                    <Text align="center" padding="5px" color="black">
                       {Dogs[currentDogId].cats}
                     </Text>
                   </Box>
@@ -144,7 +143,7 @@ function DogPage() {
                     <Heading fontSize="1.5rem" color="black">
                       W/ Dogs
                     </Heading>
-                    <Text textAlign="center" padding="5px" color="black">
+                    <Text align="center" padding="5px" color="black">
                       {Dogs[currentDogId].dog}
                     </Text>
                   </Box>

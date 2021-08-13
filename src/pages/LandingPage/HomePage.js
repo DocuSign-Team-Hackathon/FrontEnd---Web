@@ -39,7 +39,7 @@ const HomePage = () => {
           <Text margin="10px" fontSize="6xl">
             Adopt a Companion
           </Text>
-          <Text margin="10px" frontSize="2x1">
+          <Text margin="10px" fontSize="2x1">
             Your Support is so Important
           </Text>
           <Button margin="10px" bg="tomato" w="20%" p={4} color="white">
@@ -68,70 +68,70 @@ const HomePage = () => {
         <Box padding="100px" d="flex" justifyContent="center" margin="20px">
           <Box>
             <Container>
-              <Text
+              <Box
                 d="flex"
                 flexDirection="column"
                 alignItems="center"
-                textAlign="center"
+                align="center"
                 color="black"
               >
                 <Icon
                   icon="fa:paw"
                   color="#C2392E"
                   fontSize="3.5rem"
-                  textAlign="center"
+                  align="center"
                 />
                 <Text marginTop="20px">
                   Oakland Animal Servicesis Oakland’s only “open
                   admissions”shelter{" "}
                 </Text>
-              </Text>
+              </Box>
             </Container>
           </Box>
           <Box>
             <Container>
-              <Text
+              <Box
                 d="flex"
                 flexDirection="column"
                 alignItems="center"
-                textAlign="center"
+                align="center"
                 color="black"
               >
                 <Icon
                   icon="fa:paw"
                   color="#C2392E"
                   fontSize="3.5rem"
-                  textAlign="center"
+                  align="center"
                 />
                 <Text marginTop="20px">
                   We bring warmth and welcome homeall Oakland’s homeless,
                   injured,orphaned, unwanted, lost,abandoned and mistreated
                   animals.{" "}
                 </Text>
-              </Text>
+              </Box>
             </Container>
           </Box>
           <Box>
             <Container>
-              <Text
+              <Box
                 d="flex"
                 flexDirection="column"
                 alignItems="center"
-                textAlign="center"
+                align="center"
                 color="black"
               >
                 <Icon
                   icon="fa:paw"
                   color="#C2392E"
                   fontSize="3.5rem"
-                  textAlign="center"
+                  align="center"
                   margin="20px"
                 />
                 <Text marginTop="20px">
                   Every animal brought to our door is welcome, regardless of
                   age, breed, temperament or medical condition{" "}
                 </Text>
-              </Text>
+              </Box>
             </Container>
           </Box>
         </Box>
@@ -145,7 +145,7 @@ const HomePage = () => {
       >
         <Box
           paddingRight="50px"
-          textAlign="right"
+          align="right"
           d="flex"
           flexDirection="column"
           alignItems="flex-end"
@@ -153,13 +153,10 @@ const HomePage = () => {
           marginTop="100px"
         >
           <Text margin="10px" color="white" fontSize="6xl">
-            Don’t Buy,{" "}
-            <Text as="span" color="#C2392E">
-              Adopt!
-            </Text>
+            Don’t Buy, <span style={{ color: "#C2392E" }}>Adopt!</span>
           </Text>
           <Box width="30%">
-            <Text margin="10px" color="white" frontSize="2x1">
+            <Text margin="10px" color="white" fontSize="2x1">
               The unknown truth is that these animals like us, are conscious
               beings with their own personality and feelings. They deserve our
               respect and should be treated as equals.
@@ -171,7 +168,7 @@ const HomePage = () => {
         </Box>
       </Box>
       <Box padding="100px">
-        <Heading textAlign="center" color="#C2392E">
+        <Heading align="center" color="#C2392E">
           Check out the Blog!
         </Heading>
         <Box bg="#F1F3F4" padding="100px" d="flex" justifyContent="center">
@@ -183,7 +180,7 @@ const HomePage = () => {
                   position="absolute"
                   bottom="10px"
                   color="white"
-                  textAlign="center"
+                  align="center"
                   padding="10px"
                 >
                   Seeking Dog Foster Coordinator Animal Transfer Coordinator{" "}
@@ -199,7 +196,7 @@ const HomePage = () => {
                   position="absolute"
                   bottom="10px"
                   color="white"
-                  textAlign="center"
+                  align="center"
                   padding="12px"
                 >
                   Bissell Empty the Shelters adoption event! July 7-11{" "}
@@ -215,7 +212,7 @@ const HomePage = () => {
                   position="absolute"
                   bottom="10px"
                   color="white"
-                  textAlign="center"
+                  align="center"
                   padding="10px"
                 >
                   {" "}

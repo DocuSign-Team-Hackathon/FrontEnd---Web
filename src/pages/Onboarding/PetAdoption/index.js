@@ -125,7 +125,7 @@ const PetAdoptionForm = () => {
               align="start"
             >
               <Flex justifyContent="center" w="100%">
-                <Text as="u" fontWeight="bold" textAlign="center">
+                <Text as="u" fontWeight="bold" align="center">
                   OAS STAFF/VOLUNTEER USE ONLY{" "}
                 </Text>
               </Flex>
