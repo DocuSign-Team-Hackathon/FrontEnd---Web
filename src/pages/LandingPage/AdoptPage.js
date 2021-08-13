@@ -1,9 +1,9 @@
 import { React } from "react";
 import Header from "./Header";
 import Dogs from "./Dogs";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { Text, Flex, Box, Heading, Image, Grid } from "@chakra-ui/react";
-import DogPage from "./DogPage";
+
 const AdoptPage = () => {
   return (
     <Router>
