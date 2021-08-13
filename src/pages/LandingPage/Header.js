@@ -8,8 +8,10 @@ import {
   UnorderedList,
   Image,
 } from "@chakra-ui/react";
+import { BrowserRouter as Link, useHistory } from "react-router-dom";
 
 const Header = () => {
+  let history = useHistory();
   return (
     <Box
       d="flex"
@@ -36,8 +38,12 @@ const Header = () => {
               color="black"
               textTransform="uppercase"
             >
-              <ListItem margin="10px">
-                <a href="/adopt">Adopt</a>
+              <ListItem
+                margin="10px"
+                cursor="pointer"
+                onClick={() => history.push("/adopt")}
+              >
+                <Link to="/adopt">Adopt</Link>
               </ListItem>
               <ListItem margin="10px">
                 <a href="https://www.oaklandanimalservices.org/services/">
