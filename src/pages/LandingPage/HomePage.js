@@ -41,7 +41,7 @@ const HomePage = () => {
             Your Support is so Important
           </Text>
           <Button margin="10px" bg="tomato" w="20%" p={4} color="white">
-            Adpot Today
+            <a href="/adopt" >Adopt Today</a>
           </Button>
         </Box>
       </Box>

@@ -10,6 +10,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import { BrowserRouter as Link, Router, useHistory } from "react-router-dom";
+import logoNav from '../../assets/logoNav.png'
 
 const Header = () => {
   let history = useHistory();
@@ -25,7 +26,7 @@ const Header = () => {
       <Box d="flex">
         <Box width="30%">
           <a href="/">
-            <Image src="/assets/logoNav.png" />
+            <Image src={logoNav} />
           </a>
         </Box>
 
